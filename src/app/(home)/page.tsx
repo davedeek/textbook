@@ -2,18 +2,53 @@ import Link from 'next/link';
 
 export default function HomePage() {
   return (
-    <main className="flex flex-1 flex-col justify-center text-center">
-      <h1 className="mb-4 text-2xl font-bold">Hello World</h1>
-      <p className="text-fd-muted-foreground">
-        You can open{' '}
-        <Link
-          href="/docs"
-          className="text-fd-foreground font-semibold underline"
-        >
-          /docs
-        </Link>{' '}
-        and see the documentation.
+    <main className="flex flex-1 flex-col prose prose-md dark:prose-invert mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-3xl">
+      <p className="text-fd-muted-foreground">Solutions to common challenges in schools implemented in some other school district. Not only school districts, but also in cities and towns and states. Not only in America but in non national governments around the world. <Link href="https://www.governance.fyi/p/crash-course-on-chinas-industrial">Cities in China craft their own industrial policies</Link>. <Link href="https://www.governance.fyi/p/miyazakis-right-local-governments">Towns in Japan test strategies for declining birthrates</Link>. Some of these towns now outperform not only their neighbors, but even parts of the United States. <Link href="https://www.governance.fyi/p/two-mexican-states-same-industries">Mexican states run real-world experiments in economic development.</Link> This work matters.
+        This principle of small scale innovation has deep historical roots, even in national governments.
+        Kevin Hawickhorst<Link href="https://www.statecapacitance.pub/p/trumans-bureaucrats"> from State Capacitance done great work on researching this stuff from WWII and the Cold War.</Link> The Truman/Eisenhower era US Government identified effective small-scale programs and scaled them into large government agencies.
+        How can we learn from these pockets of excellence today?
+
+      </p><p className="text-fd-muted-foreground"> My &quot;American Singapore(s)&quot; project tackles this question. It creates practical guides that highlight effective policies implemented at the state and local level.
+        This first prototype (of a prototype) is Textbook, an Education Policy Guide. It compiles research and real-world case studies from U.S. school districts. This is a guide for parents, school board members, and/or other people who want better schools to have a better school.
       </p>
+      <h3 id="the-fragmentation-challenge">The Fragmentation Challenge</h3>
+      <p className="text-fd-muted-foreground">American public services operate through highly fragmented structures. Education alone involves approximately 14,000 school districts and 50 state education systems, each with distinct contexts, resources, and constraints. Housing policy varies by municipality, transportation planning occurs across jurisdictions, and family services operate through complex networks of local, state, and federal programs.
+      </p><p className="text-fd-muted-foreground">Despite this variation, national orgs and foundations promote standardized reforms as universal solutions. These initiatives originate from elite institutions, promise transformation, and assume implementation will follow from good design. The track record suggests otherwise. Common Core State Standards, despite backing from governors and hundreds of millions in foundation support, produced no clear improvement in student achievement. Technology initiatives have consumed billions while showing marginal impact.
+        Meanwhile, individual districts and states achieve meaningful improvements through careful implementation of evidence-based practices. Mississippi&#39;s systematic approach to reading instruction produced the nation&#39;s largest score gains over the past decade. North Carolina built a network of Early College High Schools that increase degree completion by tenfold. Various districts have addressed teacher shortages through housing programs, apprenticeship models, and partnerships with local colleges. These successes happen through sustained local effort rather than dramatic innovation, which may explain why they receive limited attention.
+      </p>
+      <h2 id="guide-contents-and-approach">Guide Contents and Approach</h2>
+      <p className="text-fd-muted-foreground">The education guide examines policy areas that local leaders encounter: curriculum selection, student placement policies, teacher recruitment and retention, connections between K-12 and higher education, facility usage, technology adoption, reading instruction, and student support services. Each section synthesizes academic research while emphasizing real-world implementation.
+      </p><p className="text-fd-muted-foreground">Rather than promoting particular approaches, the guide documents what happened when districts implemented various policies. For instance, the section on Singapore Math explains that success depends on providing teachers with extensive training in the concrete-pictorial-abstract progression that underlies the curriculum. Districts that purchased textbooks without investing in professional development saw little improvement. Early College High Schools show remarkable success in rigorous studies, but only when strong partnerships exist between school districts and colleges to handle credit transfer, faculty credentials, and student support.
+      </p><p className="text-fd-muted-foreground">The guide distinguishes between programs with extensive evidence from studies, those with mixed or developing research bases, and popular approaches that lack supporting evidence or show potential harm. This last category includes several promoted reforms. Detracking, the practice of eliminating advanced courses in favor of mixed-ability classrooms, has limited research support despite its popularity among equity advocates. Studies suggest it may particularly harm high-achieving students from low-income families who depend on public schools for academic rigor. Online charter schools show concerning performance data, with lower test scores and graduation rates than traditional schools across states.
+      </p>
+      <h2 id="systems-thinking-in-education">Systems Thinking in Education</h2>
+      <p className="text-fd-muted-foreground">This guide uses ideas from systems thinking to improve schools. I like to borrow ideas and thoughts from people like W. Edwards Deming and Stafford Beer.
+        Deming taught that most problems come from flawed systems, not flawed people. When schools struggle, people often blame teachers, students, or low level admins. But lasting improvement comes from changing the underlying structures and processes. Successful changes focus on redesigning systems rather than replacing people. You can&#39;t control greater powers, and there limits on how much you can compensate. You can make some changes that teachers or parents can&#39;t as a (local or state) school/education board member, principal, or superintendent.
+        Mississippi&#39;s reading improvement success illustrates this idea. The state did not succeed by finding better teachers or students. Instead, it built a better system of support. This included mandatory teacher training in proven methods, literacy coaches in every school, aligned assessments, and sustained funding over many years. Other states tried similar curricula but did not build this full system, and saw little improvement.
+      </p><p className="text-fd-muted-foreground">Stafford Beer&#39;s Law of Requisite Variety offers another key insight. It states that a system must have enough internal flexibility to respond to external complexity. Schools face tremendous variety in student needs, family backgrounds, and community conditions. Effective programs build in adaptability while maintaining high standards.
+        Community Schools offer a useful example. They integrate health services, extended learning time, and family outreach to meet diverse student needs. The specific services differ based on local priorities, but all use a coordinated structure to provide consistent support, and deal with the variation of students.
+      </p>
+      <h2 id="implementation-patterns">Implementation Patterns</h2>
+      <p className="text-fd-muted-foreground">Across different policy areas, successful implementations share common characteristics while failures follow predictable patterns. Successful programs have clear theories of action linking activities to outcomes, strong feedback mechanisms to detect and address problems, adequate resources sustained over years, and adaptation strategies that preserve core components while adjusting to local contexts.
+        Failures often result from incomplete adoption where districts visible elements while skipping essential supports. They lack feedback loops, so problems go undetected until damage is done. Resources prove insufficient for quality implementation, leading to diluted versions that don&#39;t produce intended effects. One-size-fits-all approaches ignore legitimate variation in local conditions and capacity.
+      </p><p className="text-fd-muted-foreground">The Early College High School model demonstrates successful implementation elements. These programs articulate how combining high school and college coursework leads to increased graduation and degree completion. They track student progress through both systems, identifying problems early. Successful programs secure stable funding that bridges K-12 and higher education streams. While maintaining core elements like formal partnerships and comprehensive support, they adapt to local workforce needs and student populations.
+      </p>
+      <h2 id="current-status-and-future-development">Current Status and Future Development</h2>
+      <p className="text-fd-muted-foreground">This prototype guide has significant limitations. Coverage focuses on selected policy areas where research and implementation examples are available. Some promising approaches lack documentation to include. Resource estimates come from available data but may not reflect all contexts. The guide represents an attempt to showcase why need to document, and why we need volunteers and help to create something <em>more</em>.
+        The vision extends beyond education to other domains where local implementation determines success. Housing guides could document how communities actually create affordable units despite zoning restrictions and financing challenges. Transportation guides could explain what works in adding transit service, bike infrastructure, and pedestrian improvements within typical budget constraints. Family service guides could synthesize effective models for childcare, elder care, and service integration.
+      </p>
+      <h2 id="resource-requirements">Resource Requirements</h2>
+      <p className="text-fd-muted-foreground">Creating comprehensive practitioner guides requires sustained support that differs from typical research or advocacy funding. The work involves synthesizing existing research rather than conducting new studies, documenting implementation experiences rather than running pilots, organizing knowledge for practitioners rather than academics, and maintaining resources over time rather than producing one-time reports.
+        This approach challenges standard funding models in the nonprofit and foundation sectors, which favor innovation over documentation, breakthrough solutions over incremental improvement, and new initiatives over sustaining existing work. Yet the need is clear. Thousands of local officials make consequential decisions with limited access to practical information about what has worked elsewhere under similar constraints.
+      </p>
+      <h2 id="conclusion">Bottomline</h2>
+      <p className="text-fd-muted-foreground">The education policy guide prototype is available at <Link
+        href="/docs"
+        className="text-fd-foreground font-semibold underline"
+      >
+        /docs
+      </Link>{' '}. Feedback from practitioners will inform future development. The project seeks partners interested in developing similar resources across governance domains.
+        The goal is not transforming American governance or competing with more centralized systems. Rather, it is providing useful information to the people working within existing structures to improve public services. Given the fragmented nature of American governance, improvement will continue happening community by community, district by district. These local leaders deserve access to the collective knowledge of their peers who have faced similar challenges. This prototype represents an initial attempt to provide that access. </p>
     </main>
   );
 }

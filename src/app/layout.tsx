@@ -1,10 +1,10 @@
 import './global.css';
 import { RootProvider } from 'fumadocs-ui/provider';
-import { Literata } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import { Analytics } from "@vercel/analytics/next"
 import type { ReactNode } from 'react';
 
-const inter = Literata({
+const inter = Inter({
   subsets: ['latin'],
 });
 
